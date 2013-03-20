@@ -1,7 +1,7 @@
 package com.tydic.spc.util;
 
 
-import com.talkweb.sharetools.exception.ApplicationException;
+import com.tydic.spc.exception.ApplicationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +17,6 @@ import java.util.Map;
  * 发送 HTTP 请求并返回结果。每个 HttpSender
  * 对象用于向一个地址发送，每次发送可以带不同的参数。
  *
- * @author yiding.he
  */
 public class HttpSender {
 

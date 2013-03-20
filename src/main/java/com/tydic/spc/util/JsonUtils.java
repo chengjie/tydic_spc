@@ -1,7 +1,7 @@
 package com.tydic.spc.util;
 
 import com.google.gson.*;
-import com.talkweb.sharetools.common.JsonResult;
+import com.tydic.spc.common.JsonResult;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;

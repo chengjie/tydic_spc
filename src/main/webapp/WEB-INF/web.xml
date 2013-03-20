@@ -14,24 +14,24 @@
     </listener>
 
 
-    <!-- avoid repeat login -->
+    <!-- 防重复登录 -->
     <listener>
         <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
     </listener>
 
 
-    <!-- session timeout minutes -->
+    <!-- session 超时 -->
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
 
 
-    <!-- avoid memory lose -->
+    <!-- 防内存泄漏 -->
     <listener>
         <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
     </listener>
 
-    <!--application start-->
+    <!--启动应用-->
     <listener>
         <listener-class>com.tydic.spc.web.listener.ApplicationListener</listener-class>
     </listener>
