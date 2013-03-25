@@ -15,7 +15,6 @@ import java.util.Map;
  * 包含 Ajax 请求处理结果的通用结构。该结构包含
  * {@link #success}, {@link #message}, {@link #data} 三个属性。
  *
- * @author hezhong
  */
 public class JsonResult {
 

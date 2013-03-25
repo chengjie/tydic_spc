@@ -13,7 +13,6 @@ import java.io.IOException;
 /**
  * PageContext 帮助类
  *
- * @author yiding.he
  */
 public class PageContext {
     private static final Logger log = LoggerFactory.getLogger(PageContext.class);

@@ -5,9 +5,6 @@ import java.net.URLEncoder;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author hezhong
- */
 public class StringUtils extends org.apache.commons.lang.StringUtils {
 
     public static String encodeParamValue(String str) {

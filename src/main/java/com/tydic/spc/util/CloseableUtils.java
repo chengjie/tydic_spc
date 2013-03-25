@@ -3,9 +3,6 @@ package com.tydic.spc.util;
 import java.io.Closeable;
 import java.io.IOException;
 
-/**
- * @author hezhong
- */
 public class CloseableUtils {
 
     public static void close(Closeable... closeables) {

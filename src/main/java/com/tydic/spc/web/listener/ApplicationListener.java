@@ -14,7 +14,6 @@ import javax.servlet.http.HttpSessionListener;
 /**
  * 应用侦听器
  *
- * @author yiding.he
  */
 public class ApplicationListener implements
         HttpSessionListener, ServletContextListener, ServletRequestListener {

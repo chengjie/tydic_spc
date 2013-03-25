@@ -1,8 +1,5 @@
 package com.tydic.spc.exception;
 
-/**
- * @author hezhong
- */
 public class ApplicationException extends RuntimeException{
     public ApplicationException() {
     }

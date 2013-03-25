@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class JavaBeanUtils {
 	
-	@SuppressWarnings("unchecked")
 	public static Map<String,Object> getJavaBeanFiledMap(Object clazz)
 	{
 		try {

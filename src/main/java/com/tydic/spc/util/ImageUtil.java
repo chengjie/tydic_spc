@@ -7,11 +7,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URL;
 
-/**
- * Description:
- * User: KangWei
- * Date: 11-2-23
- */
 public class ImageUtil {
     /**
      * 读取远程图片

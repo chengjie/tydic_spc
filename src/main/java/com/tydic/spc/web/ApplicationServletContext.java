@@ -7,7 +7,6 @@ import java.util.Map;
 /**
  * 访问 ServletContext 的类
  *
- * @author yiding.he
  */
 public class ApplicationServletContext {
 

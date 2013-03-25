@@ -1,8 +1,5 @@
 package com.tydic.spc.exception;
 
-/**
- * @author hezhong
- */
 public class JsonResultException extends RuntimeException {
     public JsonResultException() {
     }

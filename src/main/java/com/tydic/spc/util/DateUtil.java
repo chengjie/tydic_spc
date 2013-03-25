@@ -8,8 +8,6 @@ import java.util.Date;
 
 /**
  * <p>日期帮助类</p>
- * <p>作者： hezhong</p>
- * <p>创建日期 : 2011-2-17</p>
  */
 public class DateUtil extends DateUtils {
 

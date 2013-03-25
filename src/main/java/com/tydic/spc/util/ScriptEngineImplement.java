@@ -10,7 +10,6 @@ import javax.script.ScriptException;
  *         <b>JDK 6 new features. Using script engine(java-script engine to
  *         resolve the json object easier.)
  */
-@SuppressWarnings("restriction")
 public class ScriptEngineImplement {
 
 	private static final String JSON_FORMAT_STRING = "json = %s ; json = json.%s";

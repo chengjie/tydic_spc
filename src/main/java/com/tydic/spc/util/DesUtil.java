@@ -7,11 +7,6 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.Key;
 import java.security.Security;
 
-/**
- * (description)
- *
- * @author bo.deng
- */
 public class DesUtil
 {
     private static String strDefaultKey = "national";
