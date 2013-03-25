@@ -21,14 +21,14 @@
         </property>
     </bean>
 
-    <bean id="mappingJacksonHttpMessageConverter"
-          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+    <!--<bean id="mappingJacksonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>-->
 
     <mvc:annotation-driven/>
 
-    <mvc:interceptors>
+    <!--<mvc:interceptors>
 
-        <!--更新产品准或不准-->
+        &lt;!&ndash;更新产品准或不准&ndash;&gt;
         <mvc:interceptor>
             <mvc:mapping path="/*"/>
             <bean class="com.talkweb.sharetools.web.mvc.interceptor.GlobalInterceptor"/>
@@ -44,5 +44,5 @@
             <mvc:mapping path="/site/*"/>
             <bean class="com.talkweb.sharetools.web.mvc.interceptor.UserInterceptor"></bean>
         </mvc:interceptor>
-    </mvc:interceptors>
+    </mvc:interceptors>-->
 </beans>

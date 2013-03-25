@@ -1,4 +1,4 @@
-package com.tydic.spc;
+package com.tydic.spc.client;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

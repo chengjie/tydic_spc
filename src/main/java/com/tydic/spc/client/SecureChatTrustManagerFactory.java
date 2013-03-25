@@ -1,4 +1,4 @@
-package com.tydic.spc;
+package com.tydic.spc.client;
 
 import javax.net.ssl.ManagerFactoryParameters;
 import javax.net.ssl.TrustManager;

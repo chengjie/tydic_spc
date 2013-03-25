@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<decorators defaultdir="/decorators">
+<!--<excludes> 
+        <pattern>/js/*</pattern> 
+    </excludes>-->
+<decorator name="head" page="head.jsp">
+    <pattern>/user/upload*</pattern>
+</decorator>
+
+<decorator name="main" page="main.jsp">
+    <pattern>/*</pattern>
+</decorator>
+</decorators>

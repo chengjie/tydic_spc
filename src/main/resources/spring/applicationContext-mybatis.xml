@@ -12,18 +12,18 @@
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://127.0.0.1:3306/develop"/>
     </bean>-->
-    <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="username" value="ass_sz"/>
         <property name="password" value="ass_sz"/>
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
         <property name="url" value="jdbc:oracle:thin:@132.108.200.17:1521:mis"/>
-    </bean>-->
-    <bean id="dataSource"
+    </bean>
+    <!--<bean id="dataSource"
           class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName">
             <value>java:comp/env/jdbc/app</value>
         </property>
-    </bean>
+    </bean>-->
     <!--事务配置-->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
@@ -37,7 +37,7 @@
     <!--扫描mapper自动配置-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
-        <property name="basePackage" value="com.tydic.sps.mapper"/>
+        <property name="basePackage" value="com.tydic.spc.mapper"/>
         <property name="annotationClass" value="org.springframework.stereotype.Repository"/>
     </bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.tydic.spc;
+package com.tydic.spc.client;
 
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.ChannelHandlerContext;
