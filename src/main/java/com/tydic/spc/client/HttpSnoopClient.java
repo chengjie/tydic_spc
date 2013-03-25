@@ -64,7 +64,7 @@ public class HttpSnoopClient {
             return;
         }
 
-        // Prepare the HTTP request.
+        /*// Prepare the HTTP request.
         HttpRequest request = new DefaultHttpRequest(
                 HttpVersion.HTTP_1_1, HttpMethod.GET, uri.getRawPath());
         request.setHeader(HttpHeaders.Names.HOST, host);
@@ -75,10 +75,10 @@ public class HttpSnoopClient {
         CookieEncoder httpCookieEncoder = new CookieEncoder(false);
         httpCookieEncoder.addCookie("my-cookie", "foo");
         httpCookieEncoder.addCookie("another-cookie", "bar");
-        request.setHeader(HttpHeaders.Names.COOKIE, httpCookieEncoder.encode());
+        request.setHeader(HttpHeaders.Names.COOKIE, httpCookieEncoder.encode());*/
 
         // Send the HTTP request.
-        channel.write(request);
+        channel.write("你好");
 
         // Wait for the server to close the connection.
         channel.getCloseFuture().awaitUninterruptibly();
@@ -95,7 +95,7 @@ public class HttpSnoopClient {
             return;
         }*/
 
-        URI uri = new URI("http://127.0.0.1:8080/rest");
+        URI uri = new URI("http://127.0.0.1:8080");
         new HttpSnoopClient(uri).run();
     }
 }
