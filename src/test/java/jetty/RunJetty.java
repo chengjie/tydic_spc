@@ -8,9 +8,8 @@ import java.io.File;
 
 public class RunJetty {
 	public static void main(String[] args) throws Exception {
-		
-		
-		//绑定dataSource到JNDI;
+        long startTime = System.currentTimeMillis();
+        System.out.println("正在启动工程...");        //绑定dataSource到JNDI;
 		JettyJndiEvnLoad.bindDataSource();
 				
 		Server server = new Server(9090);
@@ -18,7 +17,9 @@ public class RunJetty {
                 .getParentFile();
         String webAppPath = new File(rootDir, "src/main/webapp").getPath();
         webAppPath = java.net.URLDecoder.decode(webAppPath, "utf-8");
-        new WebAppContext(server, webAppPath, "/appweb");
-        server.start(); 
-	}
+        new WebAppContext(server, webAppPath, "/");
+        server.start();
+        System.out.println("耗时：" + (System.currentTimeMillis() - startTime) + "ms");
+        System.out.println("请打开浏览器访问http://localhost:9090");
+    }
 }
